@@ -1,0 +1,43 @@
+# 시스템 핵심 패키지
+numpy>=1.20.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+pandas>=1.3.0
+scikit-learn>=0.24.0
+
+# 신호 처리 및 분석
+mne>=0.23.0
+neurokit2>=0.1.3
+librosa>=0.8.1
+soundfile>=0.10.3
+sounddevice>=0.4.1
+pysoundio>=1.0.0
+
+# 딥러닝 및 강화학습
+torch>=1.10.0
+joblib>=1.1.0
+
+# 하드웨어 통신
+pyserial>=3.5
+hidapi>=0.11.0
+pyusb>=1.2.0
+bluetooth-adapters>=0.7.0
+
+# GUI 및 사용자 인터페이스
+PySide6>=6.2.0
+PyQt6>=6.2.0
+pyqtgraph>=0.12.3
+
+# 멀티프로세싱 및 통신
+zmq>=0.0.0
+msgpack>=1.0.2
+
+# 유틸리티
+pyyaml>=6.0
+tqdm>=4.62.0
+psutil>=5.8.0
+pytz>=2021.3
+
+# 로깅 및 모니터링
+structlog>=21.1.0
+prometheus-client>=0.11.0
