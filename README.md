@@ -1,7 +1,7 @@
 # 개인 맞춤형 복합 자극 기반 이명 치료 시스템
 
 <p align="center">
-  <img src="docs/images/system_diagram.png" alt="시스템 구성도" width="800"/>
+  <img src="docs/images/system_diagram.svg" alt="시스템 구성도" width="800"/>
 </p>
 
 ## 프로젝트 개요
