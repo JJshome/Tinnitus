@@ -1,235 +1,8 @@
 # 개인 맞춤형 복합 자극 기반 이명 치료 시스템
 
-<div align="center">
-  <svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-    <!-- 시스템 전체 배경 -->
-    <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
-    
-    <!-- 타이틀 -->
-    <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#333">
-      개인 맞춤형 복합 자극 기반 이명 치료 시스템
-    </text>
-    
-    <!-- 다중 생체신호 분석부 -->
-    <g transform="translate(50, 80)">
-      <rect width="700" height="100" rx="5" ry="5" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
-      <text x="350" y="30" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#0d47a1">
-        다중 생체신호 분석부 (100)
-      </text>
-      
-      <!-- 모듈들 -->
-      <g transform="translate(40, 50)">
-        <rect width="180" height="30" rx="5" ry="5" fill="#bbdefb" stroke="#64b5f6" stroke-width="1"/>
-        <text x="90" y="20" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
-          고해상도 청력 검사 모듈
-        </text>
-      </g>
-      
-      <g transform="translate(260, 50)">
-        <rect width="180" height="30" rx="5" ry="5" fill="#bbdefb" stroke="#64b5f6" stroke-width="1"/>
-        <text x="90" y="20" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
-          뇌파 분석 모듈
-        </text>
-      </g>
-      
-      <g transform="translate(480, 50)">
-        <rect width="180" height="30" rx="5" ry="5" fill="#bbdefb" stroke="#64b5f6" stroke-width="1"/>
-        <text x="90" y="20" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
-          수면 다원검사 모듈
-        </text>
-      </g>
-    </g>
-    
-    <!-- 자극 생성부 섹션 -->
-    <g transform="translate(50, 190)">
-      <!-- 청각 자극 생성부 -->
-      <g transform="translate(0, 0)">
-        <rect width="220" height="100" rx="5" ry="5" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
-        <text x="110" y="30" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b5e20">
-          청각 자극 생성부 (200)
-        </text>
-        
-        <g transform="translate(20, 50)">
-          <rect width="180" height="40" rx="5" ry="5" fill="#c8e6c9" stroke="#81c784" stroke-width="1"/>
-          <text x="90" y="15" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-            노치 필터 모듈
-          </text>
-          <text x="90" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-            주파수/진폭 변조 모듈
-          </text>
-        </g>
-      </g>
-      
-      <!-- 시각 자극 생성부 -->
-      <g transform="translate(240, 0)">
-        <rect width="220" height="100" rx="5" ry="5" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
-        <text x="110" y="30" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#e65100">
-          시각 자극 생성부 (300)
-        </text>
-        
-        <g transform="translate(20, 50)">
-          <rect width="180" height="40" rx="5" ry="5" fill="#ffe0b2" stroke="#ffb74d" stroke-width="1"/>
-          <text x="90" y="15" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-            패턴 생성 모듈
-          </text>
-          <text x="90" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-            색상 최적화 모듈
-          </text>
-        </g>
-      </g>
-      
-      <!-- 촉각 자극 생성부 -->
-      <g transform="translate(480, 0)">
-        <rect width="220" height="100" rx="5" ry="5" fill="#e1f5fe" stroke="#03a9f4" stroke-width="2"/>
-        <text x="110" y="30" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#01579b">
-          촉각 자극 생성부 (400)
-        </text>
-        
-        <g transform="translate(20, 50)">
-          <rect width="180" height="40" rx="5" ry="5" fill="#b3e5fc" stroke="#4fc3f7" stroke-width="1"/>
-          <text x="90" y="15" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-            진동 패턴 생성 모듈
-          </text>
-          <text x="90" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-            강도 조절 모듈
-          </text>
-        </g>
-      </g>
-    </g>
-    
-    <!-- 복합 자극 출력부 -->
-    <g transform="translate(50, 300)">
-      <rect width="700" height="80" rx="5" ry="5" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2"/>
-      <text x="350" y="30" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#4a148c">
-        복합 자극 출력부 (500)
-      </text>
-      
-      <!-- 출력 모듈들 -->
-      <g transform="translate(40, 45)">
-        <rect width="180" height="25" rx="5" ry="5" fill="#e1bee7" stroke="#ba68c8" stroke-width="1"/>
-        <text x="90" y="17" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
-          청각 자극 출력 모듈
-        </text>
-      </g>
-      
-      <g transform="translate(260, 45)">
-        <rect width="180" height="25" rx="5" ry="5" fill="#e1bee7" stroke="#ba68c8" stroke-width="1"/>
-        <text x="90" y="17" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
-          시각 자극 출력 모듈
-        </text>
-      </g>
-      
-      <g transform="translate(480, 45)">
-        <rect width="180" height="25" rx="5" ry="5" fill="#e1bee7" stroke="#ba68c8" stroke-width="1"/>
-        <text x="90" y="17" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
-          촉각 자극 출력 모듈
-        </text>
-      </g>
-    </g>
-    
-    <!-- 수면 관리부 -->
-    <g transform="translate(50, 390)">
-      <rect width="330" height="100" rx="5" ry="5" fill="#ffebee" stroke="#f44336" stroke-width="2"/>
-      <text x="165" y="30" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#b71c1c">
-        수면 관리부 (600)
-      </text>
-      
-      <g transform="translate(20, 50)">
-        <rect width="290" height="40" rx="5" ry="5" fill="#ffcdd2" stroke="#ef9a9a" stroke-width="1"/>
-        <text x="145" y="15" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-          수면 단계 감지 모듈
-        </text>
-        <text x="145" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-          자극 최적화 모듈
-        </text>
-      </g>
-    </g>
-    
-    <!-- 적응형 제어부 -->
-    <g transform="translate(420, 390)">
-      <rect width="330" height="100" rx="5" ry="5" fill="#fffde7" stroke="#ffeb3b" stroke-width="2"/>
-      <text x="165" y="30" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#f57f17">
-        적응형 제어부 (700)
-      </text>
-      
-      <g transform="translate(20, 50)">
-        <rect width="290" height="40" rx="5" ry="5" fill="#fff9c4" stroke="#fff59d" stroke-width="1"/>
-        <text x="145" y="15" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-          반응 분석 모듈
-        </text>
-        <text x="145" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
-          자극 최적화 모듈
-        </text>
-      </g>
-    </g>
-    
-    <!-- 유전체 분석부 -->
-    <g transform="translate(50, 500)">
-      <rect width="700" height="80" rx="5" ry="5" fill="#e0f2f1" stroke="#009688" stroke-width="2"/>
-      <text x="350" y="30" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#004d40">
-        유전체 분석부 (800)
-      </text>
-      
-      <g transform="translate(150, 45)">
-        <rect width="180" height="25" rx="5" ry="5" fill="#b2dfdb" stroke="#4db6ac" stroke-width="1"/>
-        <text x="90" y="17" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
-          유전자 시퀀싱 모듈
-        </text>
-      </g>
-      
-      <g transform="translate(370, 45)">
-        <rect width="180" height="25" rx="5" ry="5" fill="#b2dfdb" stroke="#4db6ac" stroke-width="1"/>
-        <text x="90" y="17" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
-          위험도 예측 모듈
-        </text>
-      </g>
-    </g>
-    
-    <!-- 데이터 흐름 화살표 -->
-    <!-- 분석부 -> 자극 생성부 -->
-    <path d="M400 180 L400 190" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
-    
-    <!-- 자극 생성부 -> 출력부 -->
-    <path d="M160 290 L160 300" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
-    <path d="M400 290 L400 300" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
-    <path d="M640 290 L640 300" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
-    
-    <!-- 수면 관리부 -> 출력부 -->
-    <path d="M215 390 L215 380 L400 380 L400 380" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
-    
-    <!-- 적응형 제어부 -> 자극 생성부 -->
-    <path d="M585 390 L585 380 L700 380 L700 240 L670 240" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
-    
-    <!-- 마커 정의 -->
-    <defs>
-      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
-          markerWidth="6" markerHeight="6" orient="auto">
-        <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>
-      </marker>
-    </defs>
-    
-    <!-- 애니메이션 요소: 데이터 흐름 표현 -->
-    <circle r="5" fill="#2196f3">
-      <animateMotion path="M400 130 L400 190 L160 190 L160 290 L160 340" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    
-    <circle r="5" fill="#4caf50">
-      <animateMotion path="M400 130 L400 190 L400 190 L400 290 L400 340" dur="3s" repeatCount="indefinite" begin="0.5s"/>
-    </circle>
-    
-    <circle r="5" fill="#03a9f4">
-      <animateMotion path="M400 130 L400 190 L640 190 L640 290 L640 340" dur="3s" repeatCount="indefinite" begin="1s"/>
-    </circle>
-    
-    <circle r="5" fill="#f44336">
-      <animateMotion path="M215 390 L215 380 L400 380 L400 340" dur="2s" repeatCount="indefinite" begin="1.5s"/>
-    </circle>
-    
-    <circle r="5" fill="#ffeb3b">
-      <animateMotion path="M585 390 L585 380 L700 380 L700 240 L670 240" dur="4s" repeatCount="indefinite" begin="2s"/>
-    </circle>
-  </svg>
-</div>
+<p align="center">
+  <img src="docs/images/system_diagram.png" alt="시스템 구성도" width="800"/>
+</p>
 
 ## 프로젝트 개요
 
@@ -320,6 +93,7 @@
 - `examples/`: 예제 코드
   - `adaptive_controller_example.py`: 적응형 제어부 사용 예제
 - `deployment/`: 배포 관련 문서 및 코드
+- `docs/`: 문서 및 이미지 자료
 
 ## 사용 방법
 
@@ -327,7 +101,7 @@
 
 ```bash
 # 필요한 패키지 설치
-pip install -r requirements.txt
+pip install -r deployment/requirements.txt
 ```
 
 ### 기본 사용법
@@ -410,6 +184,17 @@ controller.stop()
 
 이 시스템은 지속적인 환자 모니터링과 피드백을 통해 치료 효과를 지속적으로 개선하며, 개인별 맞춤형 치료를 가능하게 합니다.
 
+## 배포 가이드
+
+시스템 배포와 관련된 상세 정보는 [deployment/README.md](deployment/README.md) 문서를 참조하세요.
+
+주요 배포 단계:
+1. 시스템 요구사항 확인
+2. 자동 설치 스크립트 실행: `python deployment/install.py`
+3. 하드웨어 연결 및 테스트: `python deployment/scripts/hardware_test.py --all`
+4. 환경 설정 확인 및 조정
+5. 시스템 실행: `python src/main.py`
+
 ## 향후 계획
 
 1. 하드웨어 통합: 사용자 친화적인 웨어러블 디바이스 개발
@@ -431,10 +216,6 @@ controller.stop()
 ## 라이선스
 
 이 프로젝트는 [MIT 라이선스](LICENSE)를 따릅니다.
-
-## 연락처
-
-개발자 연락처: [jjshome@example.com](mailto:jjshome@example.com)
 
 ## Patent Pending
 
