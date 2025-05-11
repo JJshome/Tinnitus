@@ -308,8 +308,17 @@
   - `output/`: 복합 자극 출력 모듈
   - `sleep/`: 수면 관리 모듈
   - `adaptive/`: 적응형 제어 모듈
+    - `action_space.py`: 자극 액션 공간 정의
+    - `feature_extractor.py`: 환자 상태 특성 추출
+    - `reward_function.py`: 강화학습 보상 함수
+    - `state_tracker.py`: 환자 상태 및 반응 추적
+    - `agent.py`: 강화학습 에이전트
+    - `controller.py`: 적응형 제어 통합 컨트롤러
+    - `config.py`: 강화학습 설정 파라미터
   - `genomics/`: 유전체 분석 모듈
   - `utils/`: 유틸리티 함수
+- `examples/`: 예제 코드
+  - `adaptive_controller_example.py`: 적응형 제어부 사용 예제
 - `deployment/`: 배포 관련 문서 및 코드
 
 ## 사용 방법
@@ -345,6 +354,61 @@ stimuli = generator.create_personalized_stimuli(
 # 자극 저장
 filepath = generator.save_stimuli(stimuli, 'therapy_session_001')
 ```
+
+### 적응형 제어 시스템 사용법
+
+```python
+from src.adaptive import AdaptiveController
+
+# 컨트롤러 초기화
+controller = AdaptiveController()
+
+# 환자 ID 설정 및 제어 시작
+patient_id = "patient001"
+controller.start(patient_id)
+
+# 환자 상태 업데이트
+controller.update_state(
+    eeg_data=eeg_data,
+    hrv_data=hrv_data,
+    tinnitus_data=tinnitus_data,
+    sleep_data=sleep_data
+)
+
+# 최적 자극 액션 얻기
+action = controller.get_action(sleep_stage="N2")
+
+# 자극 적용 후 환자 피드백 제공
+feedback = {
+    'tinnitus_intensity_change': -0.2,  # 이명 강도 감소
+    'comfort': 0.8,                     # 환자 편안함 (0-1)
+    'sleep_improvement': 0.6            # 수면 개선 정도 (0-1)
+}
+reward = controller.provide_feedback(feedback)
+
+# 모델 학습
+train_stats = controller.train()
+
+# 제어 종료
+controller.stop()
+```
+
+자세한 사용 예제는 `examples/adaptive_controller_example.py` 파일을 참조하세요.
+
+## 적응형 강화학습 시스템
+
+강화학습 기반 적응형 제어 시스템은 이명 치료의 핵심적인 혁신으로, 다음과 같은 특징을 가집니다:
+
+1. **자극 액션 공간**: 청각, 시각, 촉각 자극의 다양한 파라미터 조합을 정의하여 가능한 모든 치료 자극 패턴을 표현
+2. **상태 추적**: 환자의 EEG, HRV, 이명 특성, 수면 상태 등을 추적하고 이력 관리
+3. **개인화된 보상 함수**: 이명 강도 감소, 수면 개선, 환자 편안함 등 다양한 지표를 종합적으로 평가하여 보상 산출
+4. **복합 강화학습 알고리즘**: 
+   - PyTorch 기반 DQN(Deep Q-Network) 구현(하드웨어 지원 시)
+   - 간소화된 Q-테이블 기반 학습(기본 환경)
+   - 실시간 탐색-활용 균형 조정
+5. **수면 단계 연동**: 각 수면 단계(N1, N2, N3, REM)에 최적화된 자극 패턴 제공
+
+이 시스템은 지속적인 환자 모니터링과 피드백을 통해 치료 효과를 지속적으로 개선하며, 개인별 맞춤형 치료를 가능하게 합니다.
 
 ## 향후 계획
 
